@@ -18,8 +18,8 @@ app.get('/:email', function(req, res ) {
     var mailOptions = {
         from: 'ENTER EMAIL',
         to: req.params.email,
-        subject: 'Sending Email using Node.js',
-        text: 'That was easy!'
+        subject: 'Sending Email using Node.js - Nodemailer',
+        text: 'This email has been sent using nodemailer. This is so cool!'
       };
 
       transporter.sendMail(mailOptions, function(error, info){
